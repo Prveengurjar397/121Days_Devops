@@ -1,43 +1,51 @@
-# Day 01 – Introduction to DevOps & Cloud
+# Day 01 – DevOps Introduction & Ubuntu Linux Installation
 
 ## 🎯 Task
 
-Today marks the beginning of my **121 Days of DevOps Journey**.
+Today marks the beginning of my **121 Days DevOps Engineer Journey**.
 
-The objective of Day 01 is to understand the fundamentals of DevOps and Cloud Computing, set clear learning goals, and prepare a disciplined roadmap for the next 121 days.
-
-This challenge is focused on building practical skills through daily learning, hands-on practice, documentation, and consistency.
+The objective of Day 01 is to understand the fundamentals of DevOps, set up the learning environment by installing Ubuntu Linux (Local VM or AWS EC2), and learn the basics of the Linux File System & Hard Links Architecture.
 
 ---
 
 ## ✅ Expected Output
 
-By the end of today, I will have:
+By the end of today, I will:
 
-- A clear understanding of DevOps and Cloud Computing.
-- My GitHub repository structure ready.
-- Day 01 documentation completed.
-- A strong commitment to continue learning every day.
+- Understand the fundamentals of DevOps.
+- Understand why Linux is essential for DevOps.
+- Install Ubuntu Linux on a Local Virtual Machine or AWS EC2.
+- Learn the basics of Linux File System & Hard Links.
+- Create Day 01 documentation on GitHub.
 
 ---
 
 ## 📋 Today's Practice
 
-- Learn the basics of DevOps.
-- Understand the importance of Cloud Computing.
-- Create the GitHub repository.
-- Create the `2026/day-01` folder.
-- Add `README.md` and `notes.md`.
-- Document today's learning.
+- Introduction to DevOps
+- Why DevOps is important
+- Install Ubuntu Linux
+- Basic Linux Environment Setup
+- Introduction to Linux File System
+- Hard Links Architecture (Introduction)
+
+---
+
+## 🧪 Hands-on Lab
+
+- Install Ubuntu on VirtualBox or AWS EC2.
+- Boot the system successfully.
+- Open the Linux Terminal.
+- Verify the installation.
 
 ---
 
 ## 📝 Homework
 
-- Revise today's concepts.
-- Read the Day 01 notes.
-- Prepare for Day 02.
-- Commit today's work to GitHub.
+- Revise DevOps fundamentals.
+- Explore the Ubuntu desktop and Terminal.
+- Read today's notes.
+- Push Day 01 to GitHub.
 
 ---
 
@@ -45,32 +53,25 @@ By the end of today, I will have:
 
 - GurudevxAI YouTube Channel
 - GurudevxAI WhatsApp Channel
-- Official Documentation
-- GitHub Docs
+- Ubuntu Official Documentation
+- Linux Official Documentation
 
 ---
 
 ## 💡 Why This Matters
 
-DevOps is not just about learning tools.
+DevOps Engineers work mainly on Linux-based environments.
 
-It is about building:
-
-- Discipline
-- Consistency
-- Problem-solving skills
-- Automation mindset
-- Continuous improvement
-
-Daily practice will help me become a confident DevOps Engineer.
+A proper Linux setup and understanding of DevOps fundamentals are the first steps toward becoming a professional DevOps Engineer.
 
 ---
 
 ## 📤 Submission
 
-- ✅ Create `README.md`
-- ✅ Create `notes.md`
-- ✅ Commit the changes to GitHub
+- ✅ Ubuntu Installed
+- ✅ README.md Completed
+- ✅ notes.md Completed
+- ✅ GitHub Updated
 
 ---
 
@@ -80,17 +81,28 @@ Share your Day 01 progress on LinkedIn, GitHub, or other social platforms.
 
 Example:
 
-> Started my **121 Days of DevOps Journey**. Looking forward to learning, building projects, and sharing my progress every day. 🚀
+> Started my **121 Days DevOps Engineer Journey**. Today I learned DevOps fundamentals, installed Ubuntu Linux, and prepared my learning environment. 🚀
+
+---
+
+## 🎯 Daily Interview Practice
+
+1. What is DevOps?
+2. Why is Linux used in DevOps?
+3. What is Ubuntu?
+4. What is a Hard Link?
+5. Why do DevOps Engineers prefer Linux?
 
 ---
 
 ## ✅ Day 01 Status
 
-- [x] GitHub Repository Created
-- [x] Day 01 Folder Created
-- [x] README.md Added
-- [x] notes.md Added
-- [x] Day 01 Completed
+- [ ] DevOps Introduction Completed
+- [ ] Ubuntu Installed
+- [ ] Linux Environment Ready
+- [ ] README.md Added
+- [ ] notes.md Added
+- [ ] GitHub Commit Completed
 
 ---
 
