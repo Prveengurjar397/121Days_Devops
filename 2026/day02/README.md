@@ -1,60 +1,75 @@
-# Day 02 – Linux Basics & Operating System Fundamentals
+# Day 02 – Linux Directory Structure & Important System Paths
 
 ## 🎯 Task
 
-Today's goal is to build a strong foundation in Linux and understand how an Operating System works.
+Today's goal is to understand the Linux File System Hierarchy and learn the purpose of important system directories.
 
-Linux is one of the most important skills for every DevOps Engineer. Before learning Docker, Kubernetes, Cloud, or CI/CD, it is essential to understand Linux basics.
+A DevOps Engineer works with Linux servers every day. Knowing where configuration files, logs, user data, applications, and system binaries are stored is essential for troubleshooting and system administration.
 
 
 ## ✅ Expected Output
 
 By the end of today, I will:
 
-- Understand what Linux is.
-- Learn the role of an Operating System.
-- Know the basic Linux architecture.
-- Understand why Linux is used in DevOps.
-- Be ready to start working with Linux commands.
+- Understand the Linux File System Hierarchy (FHS).
+- Learn the purpose of important Linux directories.
+- Identify where system files, logs, and user data are stored.
+- Navigate through important directories using the terminal.
+- Document today's learning on GitHub.
 
 
 ## 📋 Today's Practice
 
-- Learn What is Linux.
-- Learn What is an Operating System.
-- Understand Linux Architecture.
-- Learn the advantages of Linux.
-- Explore different Linux distributions.
-- Understand the role of Shell and Kernel.
+- Introduction to Linux File System Hierarchy
+- Root Directory (/)
+- /home
+- /root
+- /etc
+- /var
+- /opt
+- /usr
+- /bin
+- /sbin
+- /tmp
+- /dev
+- /proc
+
+
+## 🧪 Hands-on Lab
+
+- Open the Linux Terminal.
+- Navigate through important directories.
+- Observe the contents of each directory.
+- Understand where configuration files and logs are stored.
 
 
 ## 📝 Homework
 
-- Revise today's concepts.
+- Revise all important Linux directories.
+- Practice navigating directories.
 - Read today's notes carefully.
-- Practice identifying Linux distributions.
-- Prepare for Day 03.
+- Push Day 02 documentation to GitHub.
 
 
 ## 📚 Resources
 
 - GurudevxAI YouTube Channel
 - GurudevxAI WhatsApp Channel
-- Official Linux Documentation
-- GitHub Docs
+- Linux Official Documentation
 
 
 ## 💡 Why This Matters
 
-Linux powers most cloud servers, Kubernetes clusters, and DevOps environments.
+Every Linux administrator and DevOps Engineer must know where important files are stored.
 
-A strong understanding of Linux fundamentals will make learning Docker, Kubernetes, Cloud, and Automation much easier.
+Understanding the Linux directory structure makes troubleshooting, server management, and automation much easier.
 
 
 ## 📤 Submission
 
-- ✅ Complete Day 02 README
-- ✅ Complete Day 02 Notes
+- ✅ Complete README.md
+- ✅ Complete notes.md
+- ✅ Practice Linux directory navigation
 - ✅ Commit changes to GitHub
 
 
@@ -64,16 +79,25 @@ Share your Day 02 progress on LinkedIn, GitHub, or other social platforms.
 
 Example:
 
-> Completed Day 02 of my **121 Days of DevOps Journey**. Today I learned Linux Basics and Operating System Fundamentals. 🚀
+> Completed Day 02 of my **121 Days DevOps Engineer Journey**. Today I learned the Linux Directory Structure and Important System Paths. 🚀
+
+
+## 🎯 Daily Interview Practice
+
+1. What is the Linux File System Hierarchy?
+2. What is the purpose of the `/etc` directory?
+3. What is stored inside `/var`?
+4. What is the difference between `/home` and `/root`?
+5. Why is the Linux directory structure important for DevOps Engineers?
 
 
 ## ✅ Day 02 Status
 
+- [ ] Linux Directory Structure Learned
+- [ ] Important System Paths Understood
 - [ ] README.md Completed
 - [ ] notes.md Completed
-- [ ] Linux Basics Learned
-- [ ] GitHub Updated
+- [ ] GitHub Commit Completed
 
----
 
 **Happy Learning! 🚀**
