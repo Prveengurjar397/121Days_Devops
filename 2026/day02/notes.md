@@ -1,180 +1,298 @@
-# 📘 Day 02 Notes – Linux Basics & Operating System Fundamentals
+# 📘 Day 02 Notes – Linux Directory Structure & Important System Paths
 
 ## 🎯 Learning Objective
 
-The goal of Day 02 is to understand Linux, Operating Systems, Linux Architecture, and why Linux is the backbone of DevOps.
+The goal of Day 02 is to understand the Linux File System Hierarchy (FHS) and learn the purpose of important system directories used by Linux and DevOps Engineers.
 
 
-# 🐧 What is Linux?
+# 📂 What is Linux File System Hierarchy (FHS)?
 
-Linux is an open-source operating system kernel created by **Linus Torvalds** in 1991.
+The Linux File System Hierarchy (FHS) is a standard structure that defines where files and directories are stored in a Linux operating system.
 
-An Operating System based on the Linux kernel is called a **Linux Distribution (Linux Distro)**.
+Unlike Windows, Linux starts from a single root directory called `/`.
 
-Examples:
-- Ubuntu
-- CentOS
-- Debian
-- Fedora
-- Red Hat Enterprise Linux (RHEL)
-- Rocky Linux
+```
+        /
+       ├── bin
+       ├── boot
+       ├── dev
+       ├── etc
+       ├── home
+       ├── lib
+       ├── media
+       ├── mnt
+       ├── opt
+       ├── proc
+       ├── root
+       ├── run
+       ├── sbin
+       ├── srv
+       ├── sys
+       ├── tmp
+       ├── usr
+       └── var
+```
 
+---
 
-# 💻 What is an Operating System (OS)?
+# 📁 Important Linux Directories
 
-An Operating System is system software that acts as a bridge between the user and computer hardware.
+## 1️⃣ `/`
 
-It manages:
+This is the **Root Directory**.
 
-- CPU
-- Memory (RAM)
-- Storage
-- Files
-- Processes
-- Devices
-- Applications
-
-Without an Operating System, a computer cannot function properly.
-
-
-# ⚙️ Why Linux is Popular in DevOps?
-
-Linux is widely used because it is:
-
-- Free and Open Source
-- Stable
-- Secure
-- Fast
-- Lightweight
-- Highly Customizable
-- Excellent for Servers and Cloud
-
-Most cloud platforms and servers run Linux.
-
-
-# 🏗️ Linux Architecture
-
-Linux consists of the following layers:
-
-1. User
-2. Applications
-3. Shell
-4. Kernel
-5. Hardware
-
-### User
-
-The person who interacts with the computer.
-
-### Applications
-
-Programs such as browsers, editors, and terminals.
-
-### Shell
-
-The Shell accepts commands from the user and sends them to the Kernel.
-
-Examples:
-- Bash
-- Zsh
-- Fish
-
-### Kernel
-
-The Kernel is the heart of Linux.
-
-It manages:
-
-- CPU
-- Memory
-- Processes
-- Devices
-- File System
-
-### Hardware
-
-Physical components such as CPU, RAM, Disk, Keyboard, and Network.
-
-
-# 🧠 What is a Kernel?
-
-The Kernel is the core part of the Operating System.
-
-Responsibilities:
-
-- Process Management
-- Memory Management
-- Device Management
-- File System Management
-- Security
-
-
-# 💬 What is Shell?
-
-The Shell is a command-line interpreter.
-
-It allows users to communicate with the Operating System by typing commands.
+- It is the top-level directory.
+- Every file and folder starts from `/`.
 
 Example:
 
 ```bash
-pwd
+cd /
 ```
 
-The Shell sends the command to the Kernel and displays the output.
+---
+
+## 2️⃣ `/home`
+
+Stores personal files of normal users.
+
+Example:
+
+```
+/home/praveen
+/home/student
+```
+
+---
+
+## 3️⃣ `/root`
+
+Home directory of the **root (administrator)** user.
+
+Only the root user has full access.
+
+---
+
+## 4️⃣ `/etc`
+
+Stores system configuration files.
+
+Examples:
+
+- passwd
+- hosts
+- ssh configuration
+- network configuration
+
+DevOps engineers frequently work inside this directory.
+
+---
+
+## 5️⃣ `/var`
+
+Stores variable data.
+
+Examples:
+
+- System logs
+- Cache
+- Mail
+- Application logs
+
+Important path:
+
+```
+/var/log
+```
+
+---
+
+## 6️⃣ `/usr`
+
+Stores user applications and utilities.
+
+Examples:
+
+- Programs
+- Libraries
+- Documentation
+
+---
+
+## 7️⃣ `/bin`
+
+Contains essential Linux commands.
+
+Examples:
+
+```bash
+ls
+cp
+mv
+cat
+pwd
+echo
+```
 
 
-# 📂 Popular Linux Distributions
+## 8️⃣ `/sbin`
 
-| Distribution | Usage                      |
-|--------------|----------------------------|
-| Ubuntu       | Beginners & Servers        |
-| Debian       | Stable Systems             |
-| CentOS       | Enterprise                 |
-| Rocky Linux  | RHEL Alternative           |
-| Fedora       | Latest Features            |
-| RHEL         | Enterprise Production      |
+Contains system administration commands.
+
+Examples:
+
+- reboot
+- shutdown
+- fsck
+
+Mostly used by the root user.
+
+---
+
+## 9️⃣ `/opt`
+
+Used for optional or third-party software.
+
+Example:
+
+```
+/opt/google
+/opt/docker
+```
 
 
-# 🌍 Real-World Example
+## 🔟 `/tmp`
 
-When you launch an AWS EC2 instance or a cloud server, it usually runs Linux.
+Stores temporary files.
 
-As a DevOps Engineer, most of your work will be on Linux servers.
+Files may be deleted automatically after reboot.
 
+
+## 1️⃣1️⃣ `/dev`
+
+Contains device files.
+
+Examples:
+
+- Hard Disk
+- USB
+- Keyboard
+- Mouse
+
+Linux treats devices as files.
+
+
+## 1️⃣2️⃣ `/proc`
+
+A virtual file system.
+
+Provides information about:
+
+- CPU
+- Memory
+- Running Processes
+
+Useful for troubleshooting.
+
+
+## 🌍 Real-World Example
+
+Suppose an application is not working.
+
+A DevOps Engineer may check:
+
+```
+/var/log
+```
+
+to read logs,
+
+or
+
+```
+/etc
+```
+
+to verify configuration files.
+
+Understanding these directories helps solve issues faster.
+
+
+# 🧪 Hands-on Practice
+
+Practice these commands:
+
+```bash
+pwd
+cd /
+ls
+cd /home
+cd /etc
+cd /var
+cd /tmp
+cd /usr
+cd /opt
+```
+
+Explore each directory using:
+
+```bash
+ls
+```
+
+---
 
 # 📌 Key Takeaways
 
-- Linux is an Open Source Operating System.
-- The Kernel is the heart of Linux.
-- The Shell is used to execute commands.
-- Linux powers most cloud infrastructure.
-- Learning Linux is the first step toward becoming a DevOps Engineer.
+- Linux starts from the Root Directory (`/`).
+- `/etc` stores configuration files.
+- `/var` stores logs and changing data.
+- `/home` stores user files.
+- `/root` is the root user's home directory.
+- `/tmp` stores temporary files.
+- `/proc` provides system information.
+- `/dev` contains device files.
 
 
 # 🎯 Interview Questions
 
-1. What is Linux?
-2. What is an Operating System?
-3. Why is Linux used in DevOps?
-4. What is a Kernel?
-5. What is a Shell?
-6. Name any five Linux distributions.
-7. What is the difference between Kernel and Shell?
+1. What is the Linux File System Hierarchy?
+2. What is the purpose of the `/etc` directory?
+3. What is stored inside `/var`?
+4. What is the difference between `/home` and `/root`?
+5. Why is `/tmp` used?
+6. What is `/proc`?
+7. Why is `/dev` important?
+
+
+# 📝 Student Assignment
+
+✅ Navigate through all important directories.
+
+✅ Write the purpose of each directory in your own words.
+
+✅ Explore `/var/log`.
+
+✅ Explore `/etc`.
+
+✅ Commit today's work to GitHub.
 
 
 # ✅ Revision Checklist
 
-- [ ] Understand Linux
-- [ ] Understand Operating System
-- [ ] Learn Linux Architecture
-- [ ] Understand Kernel
-- [ ] Understand Shell
+- [ ] Understand Linux File System Hierarchy
+- [ ] Learn Root Directory
+- [ ] Learn `/etc`
+- [ ] Learn `/var`
+- [ ] Learn `/home`
+- [ ] Learn `/root`
+- [ ] Learn `/usr`
+- [ ] Learn `/tmp`
 - [ ] Revise Interview Questions
 
 
 ## 🏆 Today's Achievement
 
-✅ Learned Linux Basics & Operating System Fundamentals.
+✅ Successfully completed **Day 02 – Linux Directory Structure & Important System Paths**.
 
-> "A strong Linux foundation is the first step toward becoming a successful DevOps Engineer." 🚀
+> "Understanding the Linux File System is the foundation of Linux Administration and DevOps." 🚀
