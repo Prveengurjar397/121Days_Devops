@@ -1,105 +1,181 @@
-# 📘 Day 01 Notes – Introduction to DevOps & Cloud
+# 📘 Day 01 Notes – DevOps Introduction & Ubuntu Linux Installation
 
 ## 🎯 Learning Objective
 
-The goal of Day 01 is to understand what DevOps is, why it is important, and how it helps organizations build and deliver software faster, more reliably, and with better collaboration.
+The goal of Day 01 is to understand the fundamentals of DevOps, learn why Linux is important for DevOps Engineers, install Ubuntu Linux, and get introduced to the Linux File System and Hard Links.
 
+---
 
-# What is DevOps?
+# 🚀 What is DevOps?
 
 DevOps is a combination of two words:
 
 - Dev = Development
 - Ops = Operations
 
-DevOps is a culture, mindset, and set of practices that bring Development and Operations teams together to automate the software development lifecycle.
+DevOps is a culture and set of practices that helps Development and Operations teams work together to build, test, deploy, and maintain software faster and more reliably.
 
+---
 
-# Why DevOps?
+# 🎯 Why DevOps?
 
-Traditional software development had many challenges:
+Traditional software development faced many challenges:
 
 - Slow software delivery
 - Manual deployments
-- Poor communication between teams
-- Frequent production failures
+- Communication gaps between teams
+- Frequent production issues
 - Difficult troubleshooting
 
-DevOps solves these problems using automation, collaboration, and continuous improvement.
+DevOps solves these problems through:
 
+- Automation
+- Collaboration
+- Continuous Integration (CI)
+- Continuous Delivery (CD)
+- Continuous Monitoring
 
-# DevOps Lifecycle
+---
 
-1. Plan
-2. Develop
-3. Build
-4. Test
-5. Release
-6. Deploy
-7. Operate
-8. Monitor
+# 💻 Why Linux for DevOps?
 
-This cycle repeats continuously to improve software quality.
+Most production servers and cloud platforms use Linux because it is:
 
+- Open Source
+- Stable
+- Secure
+- Fast
+- Lightweight
+- Highly Customizable
 
-# What is Cloud Computing?
+As a DevOps Engineer, Linux is one of the most important skills.
 
-Cloud Computing means using computing resources such as servers, storage, databases, and networking over the internet instead of managing physical hardware.
+---
+
+# 🐧 What is Ubuntu?
+
+Ubuntu is a Linux Distribution based on Debian.
+
+It is beginner-friendly and one of the most popular operating systems used for learning Linux and DevOps.
+
+---
+
+# 🖥️ Ubuntu Installation Methods
+
+You can install Ubuntu using:
+
+- VirtualBox
+- VMware Workstation
+- AWS EC2 Instance
+- Physical Machine (Dual Boot)
+
+For this course, Ubuntu can be installed on a Local Virtual Machine or AWS EC2.
+
+---
+
+# 📂 Introduction to Linux File System
+
+Linux stores everything as files.
 
 Examples:
-- AWS
-- Microsoft Azure
-- Google Cloud Platform (GCP)
 
+- Files
+- Directories
+- Devices
+- Processes
 
-# Why Learn DevOps?
+Everything is treated as a file in Linux.
 
-- High demand in the IT industry
-- Excellent career opportunities
-- Better salary packages
-- Automation skills
-- Cloud-native development
-- Continuous learning and growth
+---
 
+# 🔗 What is a Hard Link?
 
-# Hands-on Practice
+A Hard Link is another name for the same file.
 
-Today, I completed the following:
+Both the original file and the hard link point to the same data on the disk.
 
-- Created my GitHub repository
-- Created the folder structure
-- Added Day 01 documentation
-- Started my 121 Days DevOps Journey
+### Example
 
+Original File:
 
-# Key Takeaways
+```
+notes.txt
+```
+
+Hard Link:
+
+```
+backup.txt
+```
+
+If one file is modified, the changes are reflected in the other because both point to the same inode.
+
+---
+
+# 🧪 Hands-on Lab
+
+Today's practical tasks:
+
+- Install Ubuntu Linux.
+- Boot the operating system successfully.
+- Open the Terminal.
+- Explore the Desktop Environment.
+- Verify the installation.
+
+---
+
+# 🌍 Real-World Example
+
+Most cloud servers on AWS, Azure, and Google Cloud run Linux.
+
+As a DevOps Engineer, you will connect to Linux servers using SSH and perform deployments, automation, and troubleshooting.
+
+---
+
+# 📌 Key Takeaways
 
 - DevOps is a culture, not just a tool.
-- Automation improves speed and quality.
-- Cloud platforms are essential for modern DevOps.
-- Daily practice and consistency are the keys to success.
+- Linux is the foundation of DevOps.
+- Ubuntu is a beginner-friendly Linux distribution.
+- Linux File System stores everything as files.
+- Hard Links point to the same data on disk.
 
+---
 
-# Interview Questions
+# 🎯 Interview Questions
 
 1. What is DevOps?
 2. Why is DevOps important?
-3. What are the benefits of DevOps?
-4. What is Cloud Computing?
-5. Name three popular cloud providers.
+3. Why is Linux preferred in DevOps?
+4. What is Ubuntu?
+5. What is a Hard Link?
+6. Difference between Hard Link and Soft Link (Introduction).
 
+---
 
-# Revision Checklist
+# 📝 Student Assignment
+
+- Install Ubuntu Linux.
+- Open the Terminal.
+- Explore the Linux environment.
+- Read today's notes again.
+- Push Day 01 files to GitHub.
+
+---
+
+# ✅ Revision Checklist
 
 - [ ] Understand DevOps
-- [ ] Understand Cloud Computing
-- [ ] Learn DevOps Lifecycle
-- [ ] Complete GitHub setup
-- [ ] Revise today's notes
+- [ ] Understand Ubuntu
+- [ ] Complete Ubuntu Installation
+- [ ] Learn Linux File System Basics
+- [ ] Understand Hard Link Basics
+- [ ] Revise Interview Questions
 
+---
 
-## 🎯 Today's Achievement
+## 🏆 Today's Achievement
 
-✅ Started my 121 Days DevOps Journey.
+✅ Successfully completed Day 01 – DevOps Introduction & Ubuntu Linux Installation.
 
-**"Small daily improvements lead to remarkable long-term success."** 🚀
+> "A strong Linux foundation is the first step toward becoming a successful DevOps Engineer." 🚀
